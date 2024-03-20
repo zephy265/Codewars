@@ -6,8 +6,10 @@
         {
 
             Console.WriteLine(Maskify("Th45e"));
+            Console.WriteLine(isEven(6));
+            Console.WriteLine(CheckNumber(6));
 
-           
+
             //Console.WriteLine(OddCount(154512365423));
 
             Console.ReadLine();
@@ -47,6 +49,33 @@
                 return cc;
             }
             
+        }
+
+        public static bool isEven(int n) 
+        {
+            if (n%2 == 0)
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+        }
+
+        public static string CheckNumber(int n) 
+        {
+            if (n>0)
+            {
+                return "Positive";
+            }else if (n < 0) 
+            {
+                return "Negative";
+            }
+            else 
+            {
+                return "Zero";
+            }
         }
     }
 }
