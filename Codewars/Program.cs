@@ -5,9 +5,12 @@
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Maskify("Th45e"));
-            Console.WriteLine(isEven(6));
-            Console.WriteLine(CheckNumber(6));
+    
+
+            Console.WriteLine(  Enough(100,50,60));
+            //Console.WriteLine(Maskify("Th45e"));
+            //Console.WriteLine(isEven(6));
+            //Console.WriteLine(CheckNumber(6));
 
 
             //Console.WriteLine(OddCount(154512365423));
@@ -76,6 +79,11 @@
             {
                 return "Zero";
             }
+        }
+
+        public static int Enough(int cap, int on, int wait)
+        {
+            return (on +wait > cap) ? (on+wait) -cap : 0;
         }
     }
 }
